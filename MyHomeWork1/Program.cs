@@ -55,31 +55,22 @@ else
 
 // Задача 4:
 
+/*
 Console.Write("Input integer number: ");
 int num = Convert.ToInt32(Console.ReadLine());
-int Rem;
 int current;
 
 
 
-if (num < 0)
+if (num >= 1)
 {
-    current = num;
-    num = num * (-1);
+    current = 1;
+    while (current <= num)
+    {
+
+        if (current % 2 == 0)
+            Console.Write(current + " ");
+        current++;
+    }
 }
-
-else
-{
-    current = -1* num;
-}
-
-while (current <= num)
-{
-    Rem = current % 2;
-    if (Rem == 0)
-
-        Console.Write(current + " ");
-    current++;
-}
-
-
+*/
