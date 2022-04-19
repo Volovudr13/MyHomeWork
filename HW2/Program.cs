@@ -18,7 +18,7 @@ SecondNum();
 // Задача 2. Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
 
 /*
-void Aaaaa()
+void ThirdNumber()
 
 {   
     int q = new Random().Next(0,999);
@@ -26,33 +26,36 @@ void Aaaaa()
 
     if (q >= 100)
     {
-  
         q = (q % 100) % 10;
         Console.WriteLine(q);
     }
     else
     {
-        Console.WriteLine("Третьей цифры нет");
+        Console.WriteLine("Третьей цифры нет!");
 
     }
 }
 
-Aaaaa();
+ThirdNumber();
 */
 
 
 // Задача 3: Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.
 
-/*
-int q = new Random().Next(0,8);
-if (q > 5 && q < 8)
+
+void Week()
 {
-    Console.WriteLine(q + " Is Off day");
+    int q = new Random().Next(0,8);
+    if (q > 5 && q < 8)
+    {
+        Console.WriteLine(q + " It is Off day");
+    }
+    else
+    {
+        Console.WriteLine(q + " This day is not off day");
+    }
 }
-else
-{
-    Console.WriteLine(q + " This day is not of off day");
-}
+Week();
 
 */
 
