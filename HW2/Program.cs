@@ -28,12 +28,11 @@ void Aaaaa()
     {
   
         q = (q % 100) % 10;
-
         Console.WriteLine(q);
     }
     else
     {
-        Console.WriteLine("Третьего числа нет");
+        Console.WriteLine("Третьей цифры нет");
 
     }
 }
