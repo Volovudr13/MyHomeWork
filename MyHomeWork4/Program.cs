@@ -63,10 +63,10 @@ Console.WriteLine();
 int sum = 0;
 for (int i = 0; i<ror.Length; i ++)
 {
-    if (ror[i]%2==1 )
+    if ( ror [i] %2 !=0 )
     
     
-    Console.Write(ror[i] + " "); 
+    Console.Write( ror[i] + " " ); 
     sum += ror[i];
 }
 Console.WriteLine();
