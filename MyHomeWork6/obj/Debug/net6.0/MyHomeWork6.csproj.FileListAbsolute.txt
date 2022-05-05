@@ -1,0 +1,15 @@
+C:\Users\asus\Desktop\Home6\MyHomeWork6\bin\Debug\net6.0\MyHomeWork6.exe
+C:\Users\asus\Desktop\Home6\MyHomeWork6\bin\Debug\net6.0\MyHomeWork6.deps.json
+C:\Users\asus\Desktop\Home6\MyHomeWork6\bin\Debug\net6.0\MyHomeWork6.runtimeconfig.json
+C:\Users\asus\Desktop\Home6\MyHomeWork6\bin\Debug\net6.0\MyHomeWork6.dll
+C:\Users\asus\Desktop\Home6\MyHomeWork6\bin\Debug\net6.0\MyHomeWork6.pdb
+C:\Users\asus\Desktop\Home6\MyHomeWork6\obj\Debug\net6.0\MyHomeWork6.csproj.AssemblyReference.cache
+C:\Users\asus\Desktop\Home6\MyHomeWork6\obj\Debug\net6.0\MyHomeWork6.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\asus\Desktop\Home6\MyHomeWork6\obj\Debug\net6.0\MyHomeWork6.AssemblyInfoInputs.cache
+C:\Users\asus\Desktop\Home6\MyHomeWork6\obj\Debug\net6.0\MyHomeWork6.AssemblyInfo.cs
+C:\Users\asus\Desktop\Home6\MyHomeWork6\obj\Debug\net6.0\MyHomeWork6.csproj.CoreCompileInputs.cache
+C:\Users\asus\Desktop\Home6\MyHomeWork6\obj\Debug\net6.0\MyHomeWork6.dll
+C:\Users\asus\Desktop\Home6\MyHomeWork6\obj\Debug\net6.0\refint\MyHomeWork6.dll
+C:\Users\asus\Desktop\Home6\MyHomeWork6\obj\Debug\net6.0\MyHomeWork6.pdb
+C:\Users\asus\Desktop\Home6\MyHomeWork6\obj\Debug\net6.0\MyHomeWork6.genruntimeconfig.cache
+C:\Users\asus\Desktop\Home6\MyHomeWork6\obj\Debug\net6.0\ref\MyHomeWork6.dll
