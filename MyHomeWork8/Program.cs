@@ -78,7 +78,9 @@ PrintArray(ServesArray(CreateArray(num1, num2)));
 
 //2
 
-// Задайте двумерный массив. Напишите программу которая упорядочит по возрастанию элементы каждой строки.
+// Напишите программу которая будет находить строку с наименьшей суммой элементов в прямоугольном массиве.
+
+
 
 
 int [,] CreateArray (int size1, int size2)
@@ -97,48 +99,31 @@ int [,] CreateArray (int size1, int size2)
  }
 
 
-
-
-
-
- int [,] SortArray (int [,] matrix)
- {
-     for (int i = 0; i < matrix.GetLength(0); i++)
-     {
-         for (int j = 0; j < matrix.GetLength(1); j++)
-         {
-             int min =j;
-             for (int k =  j +1; k  < matrix.GetLength(1); k++)
-             {
-                 if (matrix[i,k] < matrix[i,min])
-                 {
-                     min = k;
-                 }
-             }
-            (matrix[i,min], matrix[i,j]) = (matrix[i,j], matrix[i,min]);
-         
-         }   
-
-     }
-     return matrix;
- }
-
-
-
- void PrintArray (int [,] MainArray)
- {
-     Console.WriteLine();
-     for (int i = 0; i< MainArray.GetLength(0); i++)
-     {
-         for (int j = 0; j < MainArray.GetLength(1); j++)
-         {
-            Console.Write(MainArray[i,j] + " ");
-         }      
-        Console.WriteLine();
-     }
-
-    
- }
+int LineSum (int [,] matrix)
+{
+    int StringSum = 0;
+    int MinStringSum = 0;
+    int index = 0;
+    for (int i = 0; i < matrix.GetLength(0); i++)
+    {
+        for (int j = 0; j < matrix.GetLength(1); j ++)
+        {
+            if (i ==0)
+            {
+                MinStringSum += matrix [i,j];
+                StringSum += matrix [i,j];
+            }
+            else
+                StringSum+=matrix [i,j];
+        }
+        if (MinStringSum > StringSum)
+        {
+            index = i+1;
+            MinStringSum = StringSum;
+        }
+    }
+    return index;
+}
 
 
 Console.WriteLine("Input higth of matrix: ");
@@ -147,4 +132,6 @@ Console.WriteLine("Input weith of matrix: ");
 int num2 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine();
 
-PrintArray(SortArray(CreateArray(num1,num2)));
+int NewLineSum = LineSum(CreateArray(num1,num2));
+Console.WriteLine();
+Console.WriteLine("Строка с наименьшей суммой элементов => " + NewLineSum);
