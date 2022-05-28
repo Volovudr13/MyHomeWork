@@ -72,3 +72,79 @@ int num2 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine();
 
 PrintArray(ServesArray(CreateArray(num1, num2)));
+
+
+
+
+//2
+
+// Задайте двумерный массив. Напишите программу которая упорядочит по возрастанию элементы каждой строки.
+
+
+int [,] CreateArray (int size1, int size2)
+ {
+     int [,] Array = new int [size1,size2];
+     for (int i = 0; i< Array.GetLength(0); i ++)
+     {
+         for (int j =0; j < Array.GetLength(1); j ++)
+         {
+             Array[i,j] = new Random().Next(0,10);
+             Console.Write(Array[i,j] +" ");
+         }
+        Console.WriteLine();
+     }
+     return Array;
+ }
+
+
+
+
+
+
+ int [,] SortArray (int [,] matrix)
+ {
+     for (int i = 0; i < matrix.GetLength(0); i++)
+     {
+         for (int j = 0; j < matrix.GetLength(1); j++)
+         {
+             int min =j;
+             for (int k =  j +1; k  < matrix.GetLength(1); k++)
+             {
+                 if (matrix[i,k] < matrix[i,min])
+                 {
+                     min = k;
+                 }
+             }
+            (matrix[i,min], matrix[i,j]) = (matrix[i,j], matrix[i,min]);
+         
+         }   
+
+     }
+     return matrix;
+ }
+
+
+
+ void PrintArray (int [,] MainArray)
+ {
+     Console.WriteLine();
+     for (int i = 0; i< MainArray.GetLength(0); i++)
+     {
+         for (int j = 0; j < MainArray.GetLength(1); j++)
+         {
+            Console.Write(MainArray[i,j] + " ");
+         }      
+        Console.WriteLine();
+     }
+
+    
+ }
+
+
+Console.WriteLine("Input higth of matrix: ");
+int num1 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Input weith of matrix: ");
+int num2 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine();
+
+PrintArray(SortArray(CreateArray(num1,num2)));
