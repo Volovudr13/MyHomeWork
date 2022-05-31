@@ -1,4 +1,4 @@
-﻿/*
+/*
 
 //   Задача 1
 
@@ -40,18 +40,18 @@ Console.WriteLine();
  
 string[] UnitedList(string[] array)
 {
-    int arLen = array.Length / 2 + array.Length % 2;
-    string[] outArray = new string[arLen];
+    int newArray = array.Length / 2;
+    string[] finaleArray = new string[newArray];
     for(int i = 0, j = 0; i < array.Length - 1; i += 2, j++)
     {
-        outArray[j] = (array[i] + array[i + 1]);
-        if(array.Length % 2 != 0 && j == arLen - 2)
+        finaleArray[j] = (array[i] + array[i + 1]);
+        if(array.Length % 2 != 0 && j == newArray - 2)
         {
-            outArray[arLen - 1] = array[array.Length-1];
+            finaleArray[newArray - 1] = array[array.Length-1];
             break;
         }
     }
-    return outArray;
+    return finaleArray;
 }
 
 string[] familyArray = { "Vladi", "mir",
@@ -62,5 +62,3 @@ string[] familyArray = { "Vladi", "mir",
 Console.WriteLine("{\"" + string.Join("\", \"", familyArray)+ "\"" + " => " + "\"" + string.Join("\", \"", UnitedList(familyArray)) + "\"}");
 
 */
-
-
